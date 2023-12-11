@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RCS Angola</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    </head>
+
+    <body>
+        <nav id="navGat">
+            <div class="wrapper">
+                <a href="#home">
+                    <img src="./assets/logo.png" title="" class="logo" />
+                </a>
+
+                <div class="menu">
+                    <ul>
+                        <li onclick="closeMenu()"><a class="" href="#home">Início</a></li>
+                        <li onclick="closeMenu()"><a href="#services">Serviço</a></li>
+                        <li onclick="closeMenu()"><a href="#about">Sobre</a></li>
+                        <li onclick="closeMenu()"><a href="#partners">Parceiros</a></li>
+                        <li onclick="closeMenu()"><a href="#contact">Contacto</a></li>
+                    </ul>
+
+                    <a class="button" onclick="closeMenu()" href="#">Acessos</a>
+
+                    <ul class="social-links">
+                        <li>
+                            <a target="_blank" href="https://"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+                    <svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="#312E81" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                    <path d="M10 12H30" stroke="#312E81" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                    <path d="M18 28L30 28" stroke="#312E81" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+                    <svg width="50" height="50" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="wrapper">
+                <div class="col-a">
+                    <header>
+                        <h4>BOAS-VINDAS A RCS </h4>
+                        <h1>Exija serviços</h1>
+                    </header>
+                    <div class="content">
+                        <p>A ambição da RCS é fornecer valor acrescentado em todas as áreas de atuação</p>
+                        <div class="button-content">
+                            <a href="#about" class="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9V15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15V9C21 6.17157 21 4.75736 20.1213 3.87868C19.2426 3 17.8284 3 15 3H9"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M15 15V16H16V15H15ZM7.70711 6.29289C7.31658 5.90237 6.68342 5.90237 6.29289 6.29289C5.90237 6.68342 5.90237 7.31658 6.29289 7.70711L7.70711 6.29289ZM14 8V15H16V8H14ZM15 14H8V16H15V14ZM15.7071 14.2929L7.70711 6.29289L6.29289 7.70711L14.2929 15.7071L15.7071 14.2929Z"
+                                    fill="#fff" />
+                                </svg>
+                                Quem somos
+                            </a>
+                            <a href="#contact" class="button last">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2.5H9.5V3C9.5 3.00908 9.5 3.01815 9.5 3.0272C9.49995 3.23924 9.49991 3.4453 9.52276 3.61526C9.54852 3.80686 9.61129 4.0255 9.79289 4.20711C9.9745 4.38871 10.1931 4.45148 10.3847 4.47724C10.5547 4.50009 10.7608 4.50005 10.9728 4.5C10.9819 4.5 10.9909 4.5 11 4.5H13C13.0091 4.5 13.0181 4.5 13.0272 4.5C13.2392 4.50005 13.4453 4.50009 13.6153 4.47724C13.8069 4.45148 14.0255 4.38871 14.2071 4.20711C14.3887 4.0255 14.4515 3.80686 14.4772 3.61526C14.5001 3.4453 14.5 3.23924 14.5 3.0272C14.5 3.01815 14.5 3.00908 14.5 3V2.5H14H10Z"
+                                    stroke="#312E7F" />
+                                <rect x="6.5" y="2.5" width="11" height="19" rx="1.5" stroke="#312E7F" />
+                                <circle cx="12" cy="18" r="1" fill="#312E7F" />
+                                </svg>
+                                Contacte-nos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-b">
+                    <img src="./assets/foto.jpg" alt="Mulher sorindo e representando o outubro rosa" />
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="wrapper">
+                <header>
+                    <h4>Serviços</h4>
+                    <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+                </header>
+
+                <div class="content">
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./assets/rcs_energy.jpg" title="" alt="" />
+
+                            <h3>RCS Energy</h3>
+
+                            <p>A Unidade de Negócio ENERGY criada em 2016 e tendo por base a parceria com a marca WAYNE do
+                                grupo
+                                DOVER, um dos três maiores fabricantes mundiais de bombas para postos de abastecimento de
+                                combustível.</p>
+                            <a href="#"><span>Saber mais...</span></a>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/rcs_banking.png" title="" alt="" />
+
+                            <h3>RCS Banking</h3>
+                            <p>A Unidade de Negócio BANKING criada em 2016 e sustentada pela parceria com a SPECTRA, marca
+                                especializada em terminais de pagamento certificados pela EMIS - Autoridade Competente em
+                                Angola.
+                            </p>
+                            <a href="#"><span>Saber mais...</span></a>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/rcs_it_data.jpg" title="" alt="" />
+
+                            <h3>RCS IT - Data</h3>
+                            <p>A Unidade de Negócio IT DATA integra as áreas de competências primordiais da RCS ANGOLA no
+                                que
+                                concerne às infraestruturas tecnológicas de informação e comunicação.</p>
+                            <a href="#"><span>Saber mais...</span></a>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/rcs_printing.jpg" title="" alt="" />
+
+                            <h3>RCS Printing</h3>
+                            <p>A RCS ANGOLA foi a primeira empresa a iniciar serviços de “Managed Print Services” em Angola.
+                            </p>
+                            <a href="#"><span>Saber mais...</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="wrapper">
+                <div class="col-a">
+                    <header>
+                        <h4>Sobre nós</h4>
+                        <h2>Entenda quem somos e por que existimos</h2>
+                    </header>
+
+                    <div class="content">
+                        <p>
+                            Presente em Angola desde 2004, a RCS ANGOLA acompanhou vários dos desenvolvimentos deste mercado,
+                            traduzindo-se hoje numa oferta alargada no sector da tecnologia, informação e comunicação e
+                            tecnologia electromecânica. O crescimento constante ao longo destes anos evoluiu para o objetivo de
+                            existência de: Gerar valor e superar as necessidades e expectativas dos clientes, em equilíbrio com
+                            as partes interessadas.
+                        </p>
+                        <div class="lists-about">
+                            <ul>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M21 14C21 18.9706 16.9706 23 12 23C7.02944 23 3 18.9706 3 14C3 9.02944 7.02944 5 12 5C16.9706 5 21 9.02944 21 14ZM12 19C14.7614 19 17 16.7614 17 14C17 11.2386 14.7614 9 12 9C9.23858 9 7 11.2386 7 14C7 16.7614 9.23858 19 12 19ZM12 21C15.866 21 19 17.866 19 14C19 10.134 15.866 7 12 7C8.13401 7 5 10.134 5 14C5 17.866 8.13401 21 12 21ZM13 11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11V14C11 14.5523 11.4477 15 12 15C12.5523 15 13 14.5523 13 14V11Z"
+                                          fill="#222222" />
+                                    <path d="M17.5 7.5L19 6" stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                    <path
+                                        d="M10.0681 2.37059C10.1821 2.26427 10.4332 2.17033 10.7825 2.10332C11.1318 2.03632 11.5597 2 12 2C12.4403 2 12.8682 2.03632 13.2175 2.10332C13.5668 2.17033 13.8179 2.26427 13.9319 2.37059"
+                                        stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                    Serviços de Helpdesk 24/7.
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="9" r="4" fill="#33363F" />
+                                    <circle cx="17" cy="9" r="3" fill="#33363F" />
+                                    <circle cx="7" cy="9" r="3" fill="#33363F" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M17.5685 18H19.895C20.4867 18 20.9403 17.4901 20.7966 16.9162C20.4284 15.4458 19.448 13 17 13C16.114 13 15.4201 13.3205 14.8781 13.7991C16.3858 14.7773 17.1654 16.4902 17.5685 18Z"
+                                          fill="#33363F" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.12197 13.7991C8.57989 13.3205 7.88609 13 7 13C4.55208 13 3.57166 15.4458 3.20343 16.9162C3.05971 17.4901 3.51335 18 4.10498 18H6.43155C6.83464 16.4902 7.61422 14.7773 9.12197 13.7991Z"
+                                          fill="#33363F" />
+                                    <path
+                                        d="M12 14C15.7087 14 16.6665 17.301 16.9139 19.0061C16.9932 19.5526 16.5523 20 16 20H8C7.44772 20 7.00684 19.5526 7.08614 19.0061C7.33351 17.301 8.29134 14 12 14Z"
+                                        fill="#33363F" />
+                                    </svg>
+                                    Equipa local de 250 funcionários.
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="8" stroke="#33363F" stroke-width="2" />
+                                    <ellipse cx="12" cy="12" rx="3" ry="8" stroke="#33363F" stroke-width="2" />
+                                    <path d="M4 12H20" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                    Suporte de um grupo internacional.
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 12V7.6C3 7.03995 3 6.75992 3.10899 6.54601C3.20487 6.35785 3.35785 6.20487 3.54601 6.10899C3.75992 6 4.03995 6 4.6 6H6"
+                                        stroke="#33363F" stroke-width="2" />
+                                    <path
+                                        d="M21 12V7.6C21 7.03995 21 6.75992 20.891 6.54601C20.7951 6.35785 20.6422 6.20487 20.454 6.10899C20.2401 6 19.9601 6 19.4 6H18"
+                                        stroke="#33363F" stroke-width="2" />
+                                    <path d="M5 4L8 6L5 8V4Z" fill="#33363F" />
+                                    <path d="M19 4L16 6L19 8V4Z" fill="#33363F" />
+                                    <path
+                                        d="M15 15.6C15 15.0399 15 14.7599 15.109 14.546C15.2049 14.3578 15.3578 14.2049 15.546 14.109C15.7599 14 16.0399 14 16.6 14H17L18 15H19.4C19.9601 15 20.2401 15 20.454 15.109C20.6422 15.2049 20.7951 15.3578 20.891 15.546C21 15.7599 21 16.0399 21 16.6V18.4C21 18.9601 21 19.2401 20.891 19.454C20.7951 19.6422 20.6422 19.7951 20.454 19.891C20.2401 20 19.9601 20 19.4 20H16.6C16.0399 20 15.7599 20 15.546 19.891C15.3578 19.7951 15.2049 19.6422 15.109 19.454C15 19.2401 15 18.9601 15 18.4V15.6Z"
+                                        stroke="#33363F" stroke-width="2" stroke-linejoin="round" />
+                                    <path
+                                        d="M3 15.6C3 15.0399 3 14.7599 3.10899 14.546C3.20487 14.3578 3.35785 14.2049 3.54601 14.109C3.75992 14 4.03995 14 4.6 14H5L6 15H7.4C7.96005 15 8.24008 15 8.45399 15.109C8.64215 15.2049 8.79513 15.3578 8.89101 15.546C9 15.7599 9 16.0399 9 16.6V18.4C9 18.9601 9 19.2401 8.89101 19.454C8.79513 19.6422 8.64215 19.7951 8.45399 19.891C8.24008 20 7.96005 20 7.4 20H4.6C4.03995 20 3.75992 20 3.54601 19.891C3.35785 19.7951 3.20487 19.6422 3.10899 19.454C3 19.2401 3 18.9601 3 18.4V15.6Z"
+                                        stroke="#33363F" stroke-width="2" stroke-linejoin="round" />
+                                    <path
+                                        d="M9 4.6C9 4.03995 9 3.75992 9.10899 3.54601C9.20487 3.35785 9.35785 3.20487 9.54601 3.10899C9.75992 3 10.0399 3 10.6 3H11L12 4H13.4C13.9601 4 14.2401 4 14.454 4.10899C14.6422 4.20487 14.7951 4.35785 14.891 4.54601C15 4.75992 15 5.03995 15 5.6V7.4C15 7.96005 15 8.24008 14.891 8.45399C14.7951 8.64215 14.6422 8.79513 14.454 8.89101C14.2401 9 13.9601 9 13.4 9H10.6C10.0399 9 9.75992 9 9.54601 8.89101C9.35785 8.79513 9.20487 8.64215 9.10899 8.45399C9 8.24008 9 7.96005 9 7.4V4.6Z"
+                                        stroke="#33363F" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                    Equipa pluridisciplinar.
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17.5" cy="17.5" r="2.5" stroke="#222222" stroke-width="2" />
+                                    <path d="M21 21L19.5 19.5" stroke="#222222" stroke-width="2" stroke-linecap="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M4 10C4 6.22876 4 4.34315 5.17157 3.17157C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.17157C20 4.34315 20 6.22876 20 10V13.1689C19.2646 12.7435 18.4107 12.5 17.5 12.5C14.7386 12.5 12.5 14.7386 12.5 17.5C12.5 19.4428 13.6081 21.1269 15.2268 21.9546C14.337 22 13.2765 22 12 22C8.22876 22 6.34315 22 5.17157 20.8284C4 19.6569 4 17.7712 4 14V10ZM8 5C7.44772 5 7 5.44772 7 6C7 6.55228 7.44772 7 8 7H12C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5H8ZM8 9C7.44772 9 7 9.44772 7 10C7 10.5523 7.44772 11 8 11H14C14.5523 11 15 10.5523 15 10C15 9.44772 14.5523 9 14 9L8 9ZM8 13C7.44772 13 7 13.4477 7 14C7 14.5523 7.44772 15 8 15H11C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13H8Z"
+                                          fill="#222222" />
+                                    </svg>
+
+                                    Gestão simplificada.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-b">
+                    <img src="./assets/RCS_Angola.jpg" title="" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <section id="partners">
+            <div class="wrapper">
+                <div class="col-a">
+                    <header>
+                        <h4>Parcerias</h4>
+                        <h2>A RCS ANGOLA fomentou parcerias nas suas diversas áreas de atuação</h2>
+                    </header>
+                    <div class="content">
+                        <p>Ao longo dos anos, estabelecemos várias parcerias internacionais de modo a reforçar a
+                            sua capacidade técnica e comercial em Angola. Além das parcerias históricas com os maiores
+                            fabricantes de produtos informáticos tais como Dell, APC, Hewlett-Packard, Cisco, Microsoft e
+                            Ricoh..</p>
+                    </div>
+                </div>
+                <div class="col-b">
+                    <div class="gallery">
+                        <figure>
+                            <img src="./assets/partner_Wayne.png" class="gallery_partners" alt="Image 1">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_opw.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_SP.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_rosslare.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_HewlettPackard.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_APC.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_Hikvision.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_AxisCommunications.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_innux.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_PaperCut.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/partner_Dell.png" class="gallery_partners" alt="Image 2">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <div class="col-a">
+                    <header>
+                        <h2>Entre em contacto com a gente!</h2>
+                    </header>
+
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.398 17.804L12.8585 18.6917L12.8585 18.6917L12.398 17.804ZM11.602 17.804L11.1415 18.6917L11.1415 18.6917L11.602 17.804ZM18 9C18 11.1458 16.9079 12.9159 15.545 14.2906C14.183 15.6644 12.6342 16.555 11.9376 16.9163L12.8585 18.6917C13.6448 18.2838 15.397 17.2805 16.9653 15.6987C18.5326 14.1178 20 11.8706 20 9H18ZM12 3C15.3137 3 18 5.68629 18 9H20C20 4.58172 16.4183 1 12 1V3ZM6 9C6 5.68629 8.68629 3 12 3V1C7.58172 1 4 4.58172 4 9H6ZM12.0624 16.9163C11.3658 16.555 9.81702 15.6644 8.45503 14.2906C7.09211 12.9159 6 11.1458 6 9H4C4 11.8706 5.46741 14.1178 7.03474 15.6987C8.60299 17.2805 10.3552 18.2838 11.1415 18.6917L12.0624 16.9163ZM11.9376 16.9163C11.9514 16.9091 11.9733 16.9023 12 16.9023C12.0267 16.9023 12.0486 16.9091 12.0624 16.9163L11.1415 18.6917C11.6831 18.9726 12.3169 18.9726 12.8585 18.6917L11.9376 16.9163ZM14 9C14 10.1046 13.1046 11 12 11V13C14.2091 13 16 11.2091 16 9H14ZM12 7C13.1046 7 14 7.89543 14 9H16C16 6.79086 14.2091 5 12 5V7ZM10 9C10 7.89543 10.8954 7 12 7V5C9.79086 5 8 6.79086 8 9H10ZM12 11C10.8954 11 10 10.1046 10 9H8C8 11.2091 9.79086 13 12 13V11Z"
+                                    fill="#33363F" />
+                                <path
+                                    d="M19.7942 17.5C20.5841 17.9561 21 18.4734 21 19C21 19.5266 20.5841 20.0439 19.7942 20.5C19.0043 20.9561 17.8682 21.3348 16.5 21.5981C15.1318 21.8614 13.5798 22 12 22C10.4202 22 8.86817 21.8614 7.5 21.5981C6.13183 21.3348 4.99569 20.9561 4.20577 20.5C3.41586 20.0439 3 19.5266 3 19C3 18.4734 3.41586 17.9561 4.20577 17.5"
+                                    stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                Rua nº, - Alvalade - Luanda/Angola
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.398 17.804L12.8585 18.6917L12.8585 18.6917L12.398 17.804ZM11.602 17.804L11.1415 18.6917L11.1415 18.6917L11.602 17.804ZM18 9C18 11.1458 16.9079 12.9159 15.545 14.2906C14.183 15.6644 12.6342 16.555 11.9376 16.9163L12.8585 18.6917C13.6448 18.2838 15.397 17.2805 16.9653 15.6987C18.5326 14.1178 20 11.8706 20 9H18ZM12 3C15.3137 3 18 5.68629 18 9H20C20 4.58172 16.4183 1 12 1V3ZM6 9C6 5.68629 8.68629 3 12 3V1C7.58172 1 4 4.58172 4 9H6ZM12.0624 16.9163C11.3658 16.555 9.81702 15.6644 8.45503 14.2906C7.09211 12.9159 6 11.1458 6 9H4C4 11.8706 5.46741 14.1178 7.03474 15.6987C8.60299 17.2805 10.3552 18.2838 11.1415 18.6917L12.0624 16.9163ZM11.9376 16.9163C11.9514 16.9091 11.9733 16.9023 12 16.9023C12.0267 16.9023 12.0486 16.9091 12.0624 16.9163L11.1415 18.6917C11.6831 18.9726 12.3169 18.9726 12.8585 18.6917L11.9376 16.9163ZM14 9C14 10.1046 13.1046 11 12 11V13C14.2091 13 16 11.2091 16 9H14ZM12 7C13.1046 7 14 7.89543 14 9H16C16 6.79086 14.2091 5 12 5V7ZM10 9C10 7.89543 10.8954 7 12 7V5C9.79086 5 8 6.79086 8 9H10ZM12 11C10.8954 11 10 10.1046 10 9H8C8 11.2091 9.79086 13 12 13V11Z"
+                                    fill="#33363F" />
+                                <path
+                                    d="M19.7942 17.5C20.5841 17.9561 21 18.4734 21 19C21 19.5266 20.5841 20.0439 19.7942 20.5C19.0043 20.9561 17.8682 21.3348 16.5 21.5981C15.1318 21.8614 13.5798 22 12 22C10.4202 22 8.86817 21.8614 7.5 21.5981C6.13183 21.3348 4.99569 20.9561 4.20577 20.5C3.41586 20.0439 3 19.5266 3 19C3 18.4734 3.41586 17.9561 4.20577 17.5"
+                                    stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                Rua da Liberdade, 94 - Vila Alice - Luanda/Angola
+                            </li>
+
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.398 17.804L12.8585 18.6917L12.8585 18.6917L12.398 17.804ZM11.602 17.804L11.1415 18.6917L11.1415 18.6917L11.602 17.804ZM18 9C18 11.1458 16.9079 12.9159 15.545 14.2906C14.183 15.6644 12.6342 16.555 11.9376 16.9163L12.8585 18.6917C13.6448 18.2838 15.397 17.2805 16.9653 15.6987C18.5326 14.1178 20 11.8706 20 9H18ZM12 3C15.3137 3 18 5.68629 18 9H20C20 4.58172 16.4183 1 12 1V3ZM6 9C6 5.68629 8.68629 3 12 3V1C7.58172 1 4 4.58172 4 9H6ZM12.0624 16.9163C11.3658 16.555 9.81702 15.6644 8.45503 14.2906C7.09211 12.9159 6 11.1458 6 9H4C4 11.8706 5.46741 14.1178 7.03474 15.6987C8.60299 17.2805 10.3552 18.2838 11.1415 18.6917L12.0624 16.9163ZM11.9376 16.9163C11.9514 16.9091 11.9733 16.9023 12 16.9023C12.0267 16.9023 12.0486 16.9091 12.0624 16.9163L11.1415 18.6917C11.6831 18.9726 12.3169 18.9726 12.8585 18.6917L11.9376 16.9163ZM14 9C14 10.1046 13.1046 11 12 11V13C14.2091 13 16 11.2091 16 9H14ZM12 7C13.1046 7 14 7.89543 14 9H16C16 6.79086 14.2091 5 12 5V7ZM10 9C10 7.89543 10.8954 7 12 7V5C9.79086 5 8 6.79086 8 9H10ZM12 11C10.8954 11 10 10.1046 10 9H8C8 11.2091 9.79086 13 12 13V11Z"
+                                    fill="#33363F" />
+                                <path
+                                    d="M19.7942 17.5C20.5841 17.9561 21 18.4734 21 19C21 19.5266 20.5841 20.0439 19.7942 20.5C19.0043 20.9561 17.8682 21.3348 16.5 21.5981C15.1318 21.8614 13.5798 22 12 22C10.4202 22 8.86817 21.8614 7.5 21.5981C6.13183 21.3348 4.99569 20.9561 4.20577 20.5C3.41586 20.0439 3 19.5266 3 19C3 18.4734 3.41586 17.9561 4.20577 17.5"
+                                    stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                Rua Comandante Arguelles, nº 103. Prenda
+                            </li>
+
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="6" width="16" height="12" rx="2" stroke="#33363F" stroke-width="2" />
+                                <path d="M4 9L11.1056 12.5528C11.6686 12.8343 12.3314 12.8343 12.8944 12.5528L20 9"
+                                      stroke="#33363F" stroke-width="2" />
+                                </svg>
+                                contacto@rcsangola.co.ao
+                            </li>
+
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z"
+                                    stroke="#33363F" stroke-width="2" />
+                                </svg>
+                                +244 932 896 190</li>
+                        </ul>
+
+                        <a class="button" href="https://" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2.5H9.5V3C9.5 3.00908 9.5 3.01815 9.5 3.0272C9.49995 3.23924 9.49991 3.4453 9.52276 3.61526C9.54852 3.80686 9.61129 4.0255 9.79289 4.20711C9.9745 4.38871 10.1931 4.45148 10.3847 4.47724C10.5547 4.50009 10.7608 4.50005 10.9728 4.5C10.9819 4.5 10.9909 4.5 11 4.5H13C13.0091 4.5 13.0181 4.5 13.0272 4.5C13.2392 4.50005 13.4453 4.50009 13.6153 4.47724C13.8069 4.45148 14.0255 4.38871 14.2071 4.20711C14.3887 4.0255 14.4515 3.80686 14.4772 3.61526C14.5001 3.4453 14.5 3.23924 14.5 3.0272C14.5 3.01815 14.5 3.00908 14.5 3V2.5H14H10Z"
+                                stroke="#FFF" />
+                            <rect x="6.5" y="2.5" width="11" height="19" rx="1.5" stroke="#FFF" />
+                            <circle cx="12" cy="18" r="1" fill="#FFF" />
+                            </svg>Contacte-nos
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-b">
+                    <img src="./assets/address.jpg" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="content">
+                    <ul class="menu-footer">
+                        <li><a href="#services">Serviço</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                    </ul>
+                    <a href="#home">
+                        <img src="./assets/logo.png" title="" class="logo" />
+                    </a>
+                    <ul class="menu-footer">
+                        <li><a href="#partners">Parceiros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>                    
+                </div>
+
+                <div class="copywrit">
+                    <ul class="social-links">
+                        <li>
+                            <a target="_blank" href="https://"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        ©RCS Angola, Inc. 2023. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <a id="backToTopButton" class="" href="#home">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#00856F" />
+            <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <script src="./main.js"></script>
+    </body>
+
+</html>
